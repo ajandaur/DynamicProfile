@@ -21,10 +21,10 @@ final class ProfileViewModel {
         case error(String)
     }
 
-    private var state: ViewState = .idle
-    private var currentUser: User?
-    private var orderedFields: [ProfileFieldType] = []
-    private var hasNextUser: Bool = false
+    private(set) var state: ViewState = .idle
+    private(set) var currentUser: User?
+    private(set) var orderedFields: [ProfileFieldType] = []
+    private(set) var hasNextUser: Bool = false
 
     // MARK: - Private
 
